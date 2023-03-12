@@ -6,4 +6,87 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : 8 Mar 2023, 22:20:27
     Author     : Silvinha
 */
+.Alinear{
+    display: flex;
+    justify-content: center;
+}
 
+.china{
+    width: 370px;
+    height: 300px;
+}
+
+.croacia{
+    width: 370px;
+    height: 300px;
+}
+
+.paris{
+    width: 370px;
+    height: 300px;
+}
+
+.nuevazelanda{
+    width: 370px;
+    height: 300px;
+}
+
+.singapore{
+    width: 370px;
+    height: 300px;
+}
+
+
+.Alajuela{
+    width: 370px;
+    height: 300px;
+}
+
+.guanacaste{
+    width: 370px;
+    height: 300px;
+}
+
+.puertoviejo{
+    width: 370px;
+    height: 300px;
+}
+
+.playasdelcoco{
+    width: 370px;
+    height: 300px;
+}
+
+.puntarenas{
+    width: 370px;
+    height: 300px;
+}
+
+#piePagina {
+
+    height: 8%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#contenido {
+    background-color: cornflowerblue;
+    color: black;
+    
+}
+.textoTur{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.imagenTur{
+    height: 400px;
+    width: 500px;
+    margin-left: 100px;
+}
+.txt{
+    margin-left: 50px;
+}
