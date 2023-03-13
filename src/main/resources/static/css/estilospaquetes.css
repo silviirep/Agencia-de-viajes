@@ -1,0 +1,47 @@
+section.paquetes{
+    width: 80%;
+    margin: auto;
+}
+
+section.paquetes h2{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+section.paquetes > div{
+    background-color: rgba(191, 208, 223, 0.41);
+    padding: 15px;
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+section.paquetes div a{
+    width: 180px;
+    height: 100px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+section.paquetes div a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 41px;
+}
+
+section.paquetes div a span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Proxima Nova Alt";
+    font-size: 20px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+}

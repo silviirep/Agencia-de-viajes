@@ -1,0 +1,27 @@
+section.paquetes2{
+    width: 80%;
+    margin: auto;
+}
+
+section.paquetes2 h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+section.paquetes2 > div{
+    background-color: rgba(191, 208, 223, 0.41);
+    padding: 10px;
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+}
+
+section.paquetes2 div div img{
+    width: 60%;
+    height: 100%;
+    border-radius: 41px;
+}
+
+

@@ -1,0 +1,31 @@
+#banner > div{
+    background: blue url("../imagenes/banner.jpg") no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+    
+}
+
+form{
+    display:flex;
+    bottom: 0;
+    width: 75%;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px; 
+    padding: 10px;
+    background: rgba(239, 228, 234, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+form input, form label{
+    display: block;
+}

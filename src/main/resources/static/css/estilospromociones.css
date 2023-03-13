@@ -1,0 +1,51 @@
+section.promociones{
+    width: 80%;
+    margin: auto;
+}
+
+section.promociones h2{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+section.promociones > div{
+    background-color: rgba(191, 208, 223, 0.41);
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+section.promociones div a{
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section.promociones div a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 41px;
+}
+
+section.promociones div a span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+    color: white;
+    font-family: "Proxima Nova Alt";
+    font-size: 20px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 41px 41px;
+}
+
