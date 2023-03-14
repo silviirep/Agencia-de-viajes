@@ -1,9 +1,27 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 14 mar. 2023, 11:32:19
-    Author     : Kendall
-*/
+/* Tipo texto y password ...  */
+input[type=text], input[type=password], input[type=email] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+/* Boton de Iniciar Sesion */
+button {
+  background-color: #0EA06F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
 
