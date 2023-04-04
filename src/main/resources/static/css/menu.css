@@ -1,9 +1,94 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 8 Mar 2023, 22:20:36
-    Author     : Silvinha
-*/
+*{
+    margin:0;
+    box-sizing: border-box;
+    background-color: #645bf5;
+    
+
+}
+
+
+
+.logoPagina {
+    position: fixed;
+    height: 12%;
+    width: 15%;
+    top: 10px;
+    left: 200px;
+  
+}
+.header {
+    height: 20%;
+    top: 0;
+    left: 0;
+    width: 100%
+    
+}
+
+
+.contenido {
+    position: fixed;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    color: white;
+}
+
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-widght: 992px;
+    margin : 0 auto;
+    
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none ;
+    
+    
+}
+
+.nav-menu{
+    display:flex ;
+    margin-right: 40px;
+    list-style: none;
+    
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 18px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.nav-menu-link:hover{
+    font-size: 22px;
+    background-color: #0EA06F;
+    transition: 1s;
+}
+
+.contactanos {
+    line-height: 69px;
+}
 

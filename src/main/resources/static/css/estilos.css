@@ -7,57 +7,78 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : Silvinha
 */
 .Alinear{
+    
     display: flex;
     justify-content: center;
 }
 
 .china{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .croacia{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .paris{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .nuevazelanda{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .singapore{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 
 .Alajuela{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .guanacaste{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .puertoviejo{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .playasdelcoco{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
 
 .puntarenas{
+    margin-right: 5px;
+    border-radius: 18px;
     width: 370px;
     height: 300px;
 }
@@ -83,10 +104,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .imagenTur{
+    border-radius: 18px;
     height: 400px;
     width: 500px;
     margin-left: 100px;
 }
 .txt{
     margin-left: 50px;
+}
+
+.banner{
+    border-radius: 18px;
 }
