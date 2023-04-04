@@ -1,11 +1,14 @@
 <html lang="es"> 
-    <head>
-        <title>Agencia de viajes</title>
-        <meta charset="UTF-8">
-            <link href="css/default.css" rel="stylesheet" type="text/css"/>
-            <link href="css/estilospaquetes.css" rel="stylesheet" type="text/css"/>
-            <link href="css/banner.css" rel="stylesheet" type="text/css"/>
-
+    <!--    <head>
+            <title>Agencia de viajes</title>
+            <meta charset="UTF-8">
+                <link href="css/default.css" rel="stylesheet" type="text/css"/>
+                <link href="css/estilospaquetes.css" rel="stylesheet" type="text/css"/>
+                <link href="css/banner.css" rel="stylesheet" type="text/css"/>
+    
+        </head>-->
+    <head th:replace="layout/plantilla :: head">
+        <title>Travel</title>
     </head>
     <body>
         <div id="container">
@@ -57,15 +60,15 @@
                         <form>
                             <div>
                                 <label>A donde quieres viajar?</label>
-                            <input type="text" id="text" placeholder="lugar de viaje" size="30"/>
+                                <input type="text" id="text" placeholder="lugar de viaje" size="30"/>
                             </div>
                             <div>
                                 <label>Salida</label>
-                            <input type="date" name="salida" min="2021-01-01" max="2023-12-31"/>
+                                <input type="date" name="salida" min="2021-01-01" max="2023-12-31"/>
                             </div>
                             <div>
-                               <label>Llegada</label>
-                            <input type="date" name="llegada" min="2021-01-01" max="2023-12-31"/> 
+                                <label>Llegada</label>
+                                <input type="date" name="llegada" min="2021-01-01" max="2023-12-31"/> 
                             </div>
                             <buttom type="submit" id="button">Explorar</buttom>
                         </form>
