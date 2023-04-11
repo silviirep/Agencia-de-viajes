@@ -1,9 +1,7 @@
 *{
     margin:0;
     box-sizing: border-box;
-    background-color: #645bf5;
-    
-
+/*    background-color: #645bf5;*/
 }
 
 
@@ -27,7 +25,7 @@
 
 .contenido {
     position: fixed;
-    top: 160px;
+    top: 21%;
     bottom: 0;
     left: 0;
     width: 100%;
