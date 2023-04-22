@@ -90,6 +90,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     background-color: black;
     color: white;
     text-align: center;
+    margin: 730px 0px;
 }
 
 #contenido {
@@ -116,4 +117,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .banner{
     border-radius: 18px;
+}
+
+.botonAlquilar{
+    display: block;
+    width: 150px;
+    font-weight: 800;
+    background-color: #66ccff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: -400px 1500px;
+    color: white;
+    text-decoration: none;
 }
