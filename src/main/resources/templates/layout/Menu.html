@@ -2,12 +2,49 @@
     <head <meta name="viewport" content="width=device-width, initial-scale=1.0">>
         <title>Travel</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../static/css/menu.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/> 
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script> 
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script> 
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     </head>
     <body>
-        <header>
+        <header th:fragment="header" class="header">
+            <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
             
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li class="nav-menu-item">
+                        <a href="promociones1.html" class="nav-menu-link nav-link">Promociones</a>
+                    </li>                   
+                    <li class="nav-menu-item">
+                        <a href="paquetes1.html" class="nav-menu-link nav-link">Paquetes</a>
+                    </li>
 
+                    <li class="nav-menu-item">
+                        <a href="vuelos.html" class="nav-menu-link nav-link">Vuelos</a>
+
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="Vehiculos.html" class="nav-menu-link nav-link">Alquiler</a>
+                    </li>
+
+
+                    <li class="contactanos">
+                        <details>
+                            <summary class="nav-menu-link nav-link" >Contactanos</summary>
+                            <img class="contactos" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
+
+                            <section>4000-1112</section>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
         </header>
     </body>
 

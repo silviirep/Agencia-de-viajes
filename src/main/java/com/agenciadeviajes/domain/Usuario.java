@@ -19,12 +19,16 @@ public class Usuario implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idReserva; //transforma en id_cliente
-
+    private Long idUsuario; //transforma en id_cliente
     String nombre;
     String apellidos;
+    String nombreUsuario;
     String correo;
     String telefono;
+    String fechaNacimiento;
+    String contrasena;
+    Boolean privilegios;
+    
 
     @JoinColumn(name = "id_reserva", referencedColumnName = "id_reserva")
     @ManyToOne
@@ -34,10 +38,17 @@ public class Usuario implements Serializable {
     public Usuario() {
     }
 
-    public Usuario(String nombre, String apellidos, String correo, String telefono) {
+    public Usuario(Long idUsuario, String nombre, String apellidos, String nombreUsuario, String correo, String telefono, String fechaNacimiento, String contrasena, Boolean privilegios, Reserva reserva) {
+        this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.apellidos = apellidos;
+        this.nombreUsuario = nombreUsuario;
         this.correo = correo;
         this.telefono = telefono;
+        this.fechaNacimiento = fechaNacimiento;
+        this.contrasena = contrasena;
+        this.privilegios = privilegios;
+        this.reserva = reserva;
     }
+ 
 }

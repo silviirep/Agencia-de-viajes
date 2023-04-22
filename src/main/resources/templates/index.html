@@ -1,12 +1,55 @@
-
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
     <head>
         <title>Travel</title>
         <meta charset="UTF-8">
-        <link href="/static/css/menu.css" rel="stylesheet" type="text/css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/default.css" rel="stylesheet" type="text/css"/>
+<!--        <link href="css/banner.css" rel="stylesheet" type="text/css"/>-->
     </head>
+
     <body>
-      
+        <header th:replace="layout/Menu :: header"/>
+        </br>
+        </br>
+        <div class="container">
+        <h1>Experiencias Increibles</h1>
+        </br>
+        </br>
+        
+        <article class="imgArticulo1" >
+            <img class="imgArticulo" src="imagenes/1.jpg" alt="" width="450" height="250"/>
+            <img class="imgArticulo" src="imagenes/2.jpg" alt="" width="450" height="250"/>
+            <img class="imgArticulo" src="imagenes/3.jpg" alt="" width="450" height="250" />
+        </article>
+        
+            <h2>La gente viene a Costa Rica por dos motivos:</h2>
+            <h3>descansar en su lujosa playas de arena y explorar las selvas tropicales salvajes.</h3>
+            </br>
+            </br>
+            <p>  Si no eres fanático de tumbarte al sol todo el día, ¡estamos encantados de darte la bienvenida 
+                al mejor parque de aventuras de Costa Rica! Ofrecemos las mejores actividades de aventura para hacer en Tortuga,
+                Arenal, San José, Guanacaste, Jaco y Costa Rica. Aquí podrá sentir la adrenalina correr por sus venas mientras 
+                contempla la incomparable belleza de la naturaleza costarricense. Nuestro parque de tirolesas en Costa Rica es 
+                donde puede descubrir sus límites y pasar al siguiente nivel para crear recuerdos que durarán para siempre. 
+                Piense en los tours de canopy como una aventura semi indómita, un juego seguro pero emocionante a través de las copas 
+                de los árboles. La tirolesa es un recorrido muy popular entre todos los visitantes de Costa Rica y la actividad familiar 
+                más popular aquí. No hay duda de que le encantarán nuestros tours de aventura en Costa Rica que incluyen todo lo que necesita
+                para unas vacaciones activas pero cómodas: alojamiento, comida y pasatiempos emocionantes. Múltiples rutas de canopy en Costa 
+                Rica, paseos a caballo, cursos de cuerdas, tirolesa: tenemos algo para todos. Somos una de esas agencias de viajes de aventura
+                en Costa Rica que ofrece una amplia gama de actividades adecuadas para turistas de todas las edades y niveles de preparación 
+                física. Simplemente reserve una de nuestras excursiones de aventura en Costa Rica y deje que nosotros nos encarguemos 
+                del resto. ¡Embárcate en la aventura de tu vida con Adventure Park y Hotel Vista Golfo! Somos una de esas agencias de 
+                viajes de aventura en Costa Rica que ofrece una amplia gama de actividades adecuadas para turistas de todas las edades 
+                y niveles de preparación física. Simplemente reserve una de nuestras excursiones de aventura en Costa Rica y deje que 
+                nosotros nos encarguemos del resto. ¡Embárcate en la aventura de tu vida con Adventure Park y Hotel Vista Golfo! Somos 
+                una de esas agencias de viajes de aventura en Costa Rica que ofrece una amplia gama de actividades adecuadas para turistas 
+                de todas las edades y niveles de preparación física. Simplemente reserve una de nuestras excursiones de aventura en Costa
+                Rica y deje que nosotros nos encarguemos del resto. ¡Embárcate en la aventura de tu vida con Adventure Park y Hotel Vista
+                Golfo!
+            </p>
+        
+        </div>
+        <footer th:replace="layout/Menu :: footer"/>
+
     </body>
 </html>

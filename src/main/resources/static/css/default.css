@@ -1,5 +1,5 @@
 *{
-    padding: 0;
+    padding: 2px;
     margin: 0;
     box-sizing: content-box;
     font-family: "Segoe UI Emoji"
@@ -50,7 +50,7 @@ header a{
 
 }
 
-header .espacio{
+header.espacio{
     background-color: #2ACC9B;
     width: 1px;
     padding:0px;

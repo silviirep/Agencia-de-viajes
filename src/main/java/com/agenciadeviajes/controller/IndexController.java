@@ -1,4 +1,3 @@
-
 package com.agenciadeviajes.controller;
 
 import com.agenciadeviajes.domain.Reserva;
@@ -22,7 +21,7 @@ public class IndexController {
     ReservaService reservaService;
 
     @GetMapping("/")
-    public String page(Model model) {
+    public String inicio (Model model) {
         log.info("Ahora utilizando MVC");
         var reservas = reservaService.getReservas();
         model.addAttribute("reservas", reservas);
