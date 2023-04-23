@@ -20,35 +20,35 @@ public class ReservaController {
     @Autowired
     ReservaService reservaService;
 
-    @GetMapping("/reserva/reservas")
+    @GetMapping("/reservas")
     public String inicio(Model model) {
         var reservas = reservaService.getReservas();
         model.addAttribute("reservas", reservas);
-        return "/reserva/reservas";
+        return "/reservas";
     }
 
-    @GetMapping("/reserva/nuevaReserva")
+    @GetMapping("/nuevaReserva")
     public String nuevoReserva(Reserva reserva) {
-        return "/reserva/modificar";  // retorna nombre del  html
+        return "/modificar";  // retorna nombre del  html
     }
 
-    @PostMapping("/reserva/guardarReserva")
+    @PostMapping("/guardarReserva")
     public String guardarReserva(Reserva reserva) {
         reservaService.save(reserva);
-        return "redirect:/reserva/reservas";
+        return "redirect:/reservas";
     }
 
-    @GetMapping("/reserva/modificarReserva/{idReserva}")
+    @GetMapping("/modificarReserva/{idReserva}")
     public String modificarReserva(Reserva reserva, Model model) {
         reserva = reservaService.getReserva(reserva);
         model.addAttribute("reserva", reserva);
-        return "/reserva/modificar";
+        return "/modificar";
     }
 
-    @GetMapping("/reserva/eliminarReserva/{idReserva}")
+    @GetMapping("/eliminarReserva/{idReserva}")
     public String eliminarReserva(Reserva reserva) {
         reservaService.delete(reserva);
-        return "redirect:/reserva/reservas";
+        return "redirect:/reservas";
     }
 
 }

@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Travel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div>TODO write content</div>
+     <body>
+        <header th:replace="layout/Menu :: header"/>
+        <div class="contenido">
+            <h2>Vuelos</h2>
+            <br/>
+            <!--        <br/>  para evaluacion de atributo en el model, usamos el simbolo de $ y para rutas se usa @ y abro {}-->
+            <div th:if="${vuelos != null and !vuelos.empty}">
+
+            </div>
+            <div th:if="${vuelos==null or vuelos.empty}">
+                No tenemos vuelos que mostrar...
+            </div>
+        </div>
+        <footer th:replace="layout/Menu :: footer" />
     </body>
 </html>

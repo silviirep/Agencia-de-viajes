@@ -28,25 +28,25 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/nuevaReserva")
+    @GetMapping("/reserva/nuevaReserva")
     public String nuevoEstado(Reserva reserva) {
         return "modificarReserva";  // retorna nombre del  html
     }
 
-    @PostMapping("/guardarEstado")
+    @PostMapping("/reserva/guardarEstado")
     public String guardarEstado(Reserva reserva) {
         reservaService.save(reserva);
         return "redirect:/";
     }
 
-    @GetMapping("/modificarReserva/{idReserva}")
+    @GetMapping("/reserva/modificarReserva/{idReserva}")
     public String modificarReserva(Reserva reserva, Model model) {
         reserva = reservaService.getReserva(reserva);
         model.addAttribute("reserva", reserva);
         return "modificarReserva";
     }
 
-    @GetMapping("/eliminarReserva/{idReserva}")
+    @GetMapping("/reserva/eliminarReserva/{idReserva}")
     public String eliminarReserva(Reserva reserva) {
         reservaService.delete(reserva);
         return "redirect:/";

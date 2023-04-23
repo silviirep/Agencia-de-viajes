@@ -23,22 +23,22 @@ public class AlquilerController {
     @Autowired
     AlquilerService alquilerService;
 
-    @GetMapping("/alquiler/alquilers")
+    @GetMapping("/alquiler/alquileres")
     public String inicio(Model model) {
-        var alquilers = alquilerService.getAlquilers();
-        model.addAttribute("alquilers", alquilers);
-        return "/alquiler/alquilers";
+        var alquileres = alquilerService.getAlquilers();
+        model.addAttribute("alquileres", alquileres);
+        return "/alquiler/alquileres";
     }
 
-    @GetMapping("/alquilers/nuevoAlquiler")
+    @GetMapping("/alquileres/nuevoAlquiler")
     public String nuevoAlquiler(Alquiler alquiler) {
         return "/alquiler/modificar";  // retorna nombre del  html
     }
 
-    @PostMapping("/alquilers/guardar")
+    @PostMapping("/alquileres/guardar")
     public String guardarAlquiler(Alquiler alquiler) {
         alquilerService.save(alquiler);
-        return "redirect:/alquiler/alquilers";
+        return "redirect:/alquiler/alquileres";
     }
 
     @GetMapping("/alquiler/modificar/{idAlquiler}")
@@ -48,9 +48,9 @@ public class AlquilerController {
         return "/alquiler/modificar";
     }
 
-    @GetMapping("/alquilers/eliminar/{idAlquiler}")
+    @GetMapping("/alquileres/eliminar/{idAlquiler}")
     public String eliminarAlquiler(Alquiler alquiler) {
         alquilerService.delete(alquiler);
-        return "redirect:/alquiler/alquilers";
+        return "redirect:/alquiler/alquileres";
     }
 }
