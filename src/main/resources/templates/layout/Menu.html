@@ -1,5 +1,5 @@
 <html>
-    <head <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <head th:fragment="head">
         <title>Travel</title>
         <meta charset="UTF-8">
         <link href="../../static/css/menu.css" rel="stylesheet" type="text/css"/>
@@ -11,49 +11,55 @@
     </head>
     <body>
         <header th:fragment="header" class="header">
-            <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
-
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><i class="fa-solid fa-house"></i></li>
-                    <li class="nav-menu-item">
-                        <a href="promociones1.html" class="nav-menu-link nav-link">Promociones</a>
-                    </li>                   
-                    <li class="nav-menu-item">
-                        <a href="paquetes1.html" class="nav-menu-link nav-link">Paquetes</a>
-                    </li>
-
-                    <li class="nav-menu-item">
-                        <a href="vuelos.html" class="nav-menu-link nav-link">Vuelos</a>
-
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="../turistico/turisticos.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
 
 
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="../alquiler/alquileres.html" class="nav-menu-link nav-link">Alquiler</a>
+            <a  th:href="@{/login/inicioSesion}">Iniciar Sesión</a>
+        </li>
+        <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
 
-                    </li>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <i class="fa-regular fa-house" style="color: #f7f7f7;"></i>
+                <i class="fa-light fa-pipe" style="color: #ededed;"></i>
+                <li class="nav-menu-item">
+                    <i class="fa-thin fa-percent" style="color: #f7f7f7;"></i>
+                    <a href="promociones1.html" class="nav-menu-link nav-link">Promociones</a>
+                </li>                   
+                <li class="nav-menu-item">
+                    <i class="fa-thin fa-suitcase" style="color: #ffffff;"></i>
+                    <a href="paquetes1.html" class="nav-menu-link nav-link">Paquetes</a>
+                </li>
 
-                    
+                <li class="nav-menu-item">
+                    <i class="fa-thin fa-plane" style="color: #ffffff;"></i>
+                    <a href="vuelos.html" class="nav-menu-link nav-link">Vuelos</a>
 
+                </li>
+                <li class="nav-menu-item">
+                    <i class="fa-regular fa-location-dot" style="color: #ffffff;"></i>
+                    <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <i class="fa-regular fa-car" style="color: #eff0f0;"></i>
+                    <a href="Vehiculos.html" class="nav-menu-link nav-link">Alquiler</a>
+                </li>
 
-                    <li class="contactanos">
-                        <details>
-                            <summary class="nav-menu-link nav-link" >Contactanos</summary>
-                            <img class="contactos" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
+                <i class="fa-thin fa-phone" style="color: #f5ffff;"></i>
+                <li class="contactanos">
+                    <details>
 
-                            <section>4000-1112</section>
-                        </details>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+                        <summary class="nav-menu-link nav-link" >Contactanos</summary>
+                        <img class="contactos" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
 
-    <footer th:fragment="footer" class="footer">
-        <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
-    </footer>
+                        <section>4000-1112</section>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<footer th:fragment="footer" class="footer">
+    <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
+</footer>
 </html>
