@@ -20,9 +20,6 @@ import org.springframework.web.bind.annotation.PostMapping;
  @Controller
 @Slf4j
 public class TuristicoController {
-
-
-
     @Autowired
     TuristicoService turisticoService;
 
