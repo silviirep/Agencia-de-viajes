@@ -17,15 +17,14 @@
                 <ul class="nav-menu">
                     <li><i class="fa-solid fa-house"></i></li>
                     <li class="nav-menu-item">
-                        <a href="promociones1.html" class="nav-menu-link nav-link">Promociones</a>
+                        <a th:href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
                     </li>                   
                     <li class="nav-menu-item">
-                        <a href="paquetes1.html" class="nav-menu-link nav-link">Paquetes</a>
+                        <a th:each="paquete : ${paquetes}" class="nav-menu-link nav-link">Paquetes</a>
                     </li>
 
                     <li class="nav-menu-item">
-                        <a href="vuelos.html" class="nav-menu-link nav-link">Vuelos</a>
-
+                        <a th:each="vuelo : ${vuelos}" class="nav-menu-link nav-link">Vuelos</a>
                     </li>
                     <li class="nav-menu-item">
                         <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
