@@ -12,15 +12,15 @@
 
     </head>
     <body>
-        
+
         <header th:fragment="header" class="header">
             <a class="inicioSesion" th:href="@{/login/inicioSesion}">Inicio Sesión</a>
             <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
 
             <nav class="nav">
                 <ul class="nav-menu">
-<!--                    <i class="far fa-house" style="color: #f7f7f7;"></i>
-                    <i class="far fa-pipe" style="color: #ededed;"></i>-->
+                    <!--                    <i class="far fa-house" style="color: #f7f7f7;"></i>
+                                        <i class="far fa-pipe" style="color: #ededed;"></i>-->
                     <li class="nav-menu-item">
                         <i class="fas fa-percent" style="color: #f7f7f7;"></i>
                         <a th:href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
@@ -43,34 +43,18 @@
                         <i class="fas fa-car" style="color: #eff0f0;"></i>
                         <a th:href="@{/alquiler/alquileres}" class="nav-menu-link nav-link">Alquiler</a>
                     </li>
-
-
-                    <li class="nav-menu-item">
-                        <i class="fas fa-phone" style="color: #f5ffff;"></i>
-                        <div class="nav-menu-link nav-link " id="containerInfoContacto">
-                            <!--aqui pega el icono-->
-                            <i class="fas fa-car" style="color: #eff0f0;"></i>
-                            Alquiler
-
-                            <div id="infoContacto">
-                                <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-                                <span>4000-1112</span>
-                           <div class="absolute bottom-0">
-<!--                                <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-                                <span>4000-1112</span>-->
-                            </div>
-                             <li class="nav-menu-item">
-                        <a class="nav-menu-link nav-link">Contactanos</a>
-                        </div>
-                       
-                       
-<!--                        <details>
-                            <summary class="" >Contactanos</summary>
-                            <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-                            <section>4000-1112</section>
-                        </details>-->
-                    
-                </ul>
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">Contactanos</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Tel. 40010-1010</a>
+                                    <a href="#">travel@viajes.com</a>
+                                    <a href="#">Whatsapp: 8810-1011</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
             </nav>
         </header>
     </body>
