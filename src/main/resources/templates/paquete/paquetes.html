@@ -80,7 +80,8 @@
                     paquetes internacionales
                 </h2>
                 <div>
-                    <a href="#" th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Internacionales'">
+                    <a th:href="@{/paquete/paquetesDetalle/{titulo}(titulo=${link.titulo})}" 
+                       th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Internacionales'">
                         <img th:src="@{${'/' + link.imagen}}" alt="">
                         <span th:text="${link.titulo}"></span>
                     </a>
@@ -102,7 +103,7 @@
                     paquetes nacionales
                 </h2>
                 <div>
-                    <a href="#" th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Nacionales'">
+                    <a href="@{/paquete/paquetesDetalle/{titulo}(titulo=${link.titulo})}" th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Nacionales'">
                         <img th:src="@{${'/' + link.imagen}}" alt="">
                         <span th:text="${link.titulo}"></span>
                     </a>

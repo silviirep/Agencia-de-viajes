@@ -10,13 +10,17 @@
     <body>
         <header th:replace="layout/menu :: header"/>
         <div class="contenido">
-            <a th:href="@{/promociones/promocion}"></a>
             <section class="promociones">
                 <h2>
                     PROMOCIONES
                 </h2>
                 <div>
-                    <a th:href="@{/promociones/promocionesDetalle}">
+                    <a th:href="@{/promociones/promocion/{titulo}(titulo=${link.titulo})}" 
+                       th:each="link : ${promocion}" th:object="${link}" th:if="${link.tipo} == 'temporada'">
+                        <img th:src="@{${'/' + link.imagen}}" alt="">
+                        <span th:text="${link.titulo}"></span>
+                    </a>
+<!--                    <a th:href="@{/promociones/promocionesDetalle}">
                         <img src="imagenes/puertovallarta.jpg" alt="Puerto Vallarta"/>
                         <span>Puerto Vallarta</br>Todo Incluido</span>
                     </a>
@@ -35,7 +39,7 @@
                     <a href="@{/promociones/promocionesDetalle}">
                         <img src="imagenes/fortunaSancarlos.jpg" alt="Fortuna de San Carlos"/>
                         <span>Fortuna de San Carlos</br>Todo Incluido</span>
-                    </a>
+                    </a>-->
                 </div>
             </section>
         </div>
