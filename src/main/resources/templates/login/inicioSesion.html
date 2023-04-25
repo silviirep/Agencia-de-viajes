@@ -2,8 +2,7 @@
     <html xmlns:th="http://www.thymeleaf.org">
         <title>Iniciar Sesión</title>
         <meta charset="UTF-8">
-          <link href="../../stati/ccss/menu.css" rel="stylesheet" type="text/css"/>
-<!--        <link href="../../static/css/default.css" rel="stylesheet" type="text/css"/>-->
+       
         <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -34,7 +33,9 @@
             <button type="submit">Inciar Sesión</button>
 
         </div>
-        <footer th:replace="layout/Menu :: footer"/>
+        <footer th:fragment="footer" class="footer">
+        <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
+    </footer>
     </body>
 </html>
 

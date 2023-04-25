@@ -1,4 +1,9 @@
-
+*{
+    padding: 2px;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: "Segoe UI Emoji"
+}
 
   body{
     background: rgb(83,124,191);
