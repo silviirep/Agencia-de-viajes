@@ -50,7 +50,7 @@
     display:flex ;
     margin-right: 10px;
     list-style: none;
-
+    align-items: center;
 }
 
 .nav-menu-item{
@@ -72,7 +72,6 @@
 }
 
 .contactanos {
-    line-height: 69px;
 }
 
 .footer{

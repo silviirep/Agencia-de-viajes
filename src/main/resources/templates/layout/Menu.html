@@ -8,79 +8,57 @@
         <script th:src="@{/webjars/jquery/jquery.min.js}"></script> 
         <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script> 
         <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-OMV7IuZv+1bz7IVuKfaDY+V7HbEfc0lVzjKl9Jg5S5ZpJ5DmH+Fc1emW2+m8qy3qzmslLX9YbV7gbjeZvJgV7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
     <body>
         <header th:fragment="header" class="header">
-<<<<<<< HEAD
+            <th: block>
             <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
-            
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><i class="fa-solid fa-house"></i></li>
-                    <li class="nav-menu-item">
-                        <a th:href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
-                    </li>                   
-                    <li class="nav-menu-item">
-                        <a th:each="paquete : ${paquetes}" class="nav-menu-link nav-link">Paquetes</a>
-                    </li>
 
-                    <li class="nav-menu-item">
-                        <a th:each="vuelo : ${vuelos}" class="nav-menu-link nav-link">Vuelos</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="Vehiculos.html" class="nav-menu-link nav-link">Alquiler</a>
-                    </li>
+                    <nav class="nav">
+                        <ul class="nav-menu">
+                            <i class="far fa-house" style="color: #f7f7f7;"></i>
+                            <i class="far fa-pipe" style="color: #ededed;"></i>
+                            <li class="nav-menu-item">
+                                <i class="fas fa-percent" style="color: #f7f7f7;"></i>
+                                <a href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
+                            </li>                   
+                            <li class="nav-menu-item">
+                                <i class="fas fa-suitcase" style="color: #ffffff;"></i>
+                                <a th:href="@{/paquete/paquetes}" class="nav-menu-link nav-link">Paquetes</a>
+                            </li>
 
-            <a  th:href="@{/login/inicioSesion}">Iniciar Sesión</a>
-        </li>
-        <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
+                            <li class="nav-menu-item">
+                                <i class="fas fa-plane" style="color: #ffffff;"></i>
+                                <a th:href="@{/vuelo/vuelos}" class="nav-menu-link nav-link">Vuelos</a>
 
-        <nav class="nav">
-            <ul class="nav-menu">
-                <i class="fa-regular fa-house" style="color: #f7f7f7;"></i>
-                <i class="fa-light fa-pipe" style="color: #ededed;"></i>
-                <li class="nav-menu-item">
-                    <i class="fa-thin fa-percent" style="color: #f7f7f7;"></i>
-                    <a href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
-                </li>                   
-                <li class="nav-menu-item">
-                    <i class="fa-thin fa-suitcase" style="color: #ffffff;"></i>
-                    <a href="paquetes1.html" class="nav-menu-link nav-link">Paquetes</a>
-                </li>
+                            </li>
+                            <li class="nav-menu-item">
+                                <i class="fas fa-location-dot" style="color: #ffffff;"></i>
+                                <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <i class="fas fa-car" style="color: #eff0f0;"></i>
+                                <a href="Vehiculos.html" class="nav-menu-link nav-link">Alquiler</a>
+                            </li>
 
-                <li class="nav-menu-item">
-                    <i class="fa-thin fa-plane" style="color: #ffffff;"></i>
-                    <a href="vuelos.html" class="nav-menu-link nav-link">Vuelos</a>
+                            <!--<i class="fas fa-phone" style="color: #f5ffff;"></i>-->
+                            <li class="nav-menu-item">
+                                <details>
 
-                </li>
-                <li class="nav-menu-item">
-                    <i class="fa-regular fa-location-dot" style="color: #ffffff;"></i>
-                    <a href="turIstico.html" class="nav-menu-link nav-link">Lugares Turísticos</a>
-                </li>
-                <li class="nav-menu-item">
-                    <i class="fa-regular fa-car" style="color: #eff0f0;"></i>
-                    <a href="Vehiculos.html" class="nav-menu-link nav-link">Alquiler</a>
-                </li>
+                                    <summary class="" >Contactanos</summary>
+<!--                                    <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
 
-                <i class="fa-thin fa-phone" style="color: #f5ffff;"></i>
-                <li class="contactanos">
-                    <details>
+                                    <section>4000-1112</section>-->
+                                </details>
+                            </li>
+                        </ul>
+                    </nav>
+                    </header>
+                    </body>
 
-                        <summary class="nav-menu-link nav-link" >Contactanos</summary>
-                        <img class="contactos" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-
-                        <section>4000-1112</section>
-                    </details>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
-
-<footer th:fragment="footer" class="footer">
-    <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
-</footer>
-</html>
+                    <footer th:fragment="footer" class="footer">
+                        <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
+                    </footer>
+                    </html>
