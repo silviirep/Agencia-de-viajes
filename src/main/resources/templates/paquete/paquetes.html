@@ -5,15 +5,22 @@
         <title>Travel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
      <body>
         <header th:replace="layout/Menu :: header"/>
         <div class="contenido">
-            <h2>Paquete</h2>
-            <br/>
-            <!--        <br/>  para evaluacion de atributo en el model, usamos el simbolo de $ y para rutas se usa @ y abro {}-->
+            <h2>Paquete Singapore</h2>
             <div th:if="${paquetes != null and !paquetes.empty}">
-
+                <img src="imagenes/singapore.jpg" alt="Singapore"/>
+                <div>
+                    <td th:text="${categoria.descripcion}"></td>
+                    <p>Boletos de ida</p>
+                    <p>Alimentacion Completa</p>
+                    <p>Tours</p>
+                    <p>Hospedaje 4 y 3 noches</p>
+                </div>
+                    
             </div>
             <div th:if="${paquetes==null or paquetes.empty}">
                 No tenemos paquetes que mostrar...
