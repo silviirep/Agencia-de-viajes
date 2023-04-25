@@ -8,57 +8,64 @@
         <script th:src="@{/webjars/jquery/jquery.min.js}"></script> 
         <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script> 
         <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-OMV7IuZv+1bz7IVuKfaDY+V7HbEfc0lVzjKl9Jg5S5ZpJ5DmH+Fc1emW2+m8qy3qzmslLX9YbV7gbjeZvJgV7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
     <body>
         <header th:fragment="header" class="header">
-            <th: block>
+
             <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
 
-                    <nav class="nav">
-                        <ul class="nav-menu">
-                            <i class="far fa-house" style="color: #f7f7f7;"></i>
-                            <i class="far fa-pipe" style="color: #ededed;"></i>
-                            <li class="nav-menu-item">
-                                <i class="fas fa-percent" style="color: #f7f7f7;"></i>
-                                <a href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
-                            </li>                   
-                            <li class="nav-menu-item">
-                                <i class="fas fa-suitcase" style="color: #ffffff;"></i>
-                                <a th:href="@{/paquete/paquetes}" class="nav-menu-link nav-link">Paquetes</a>
-                            </li>
+            <nav class="nav">
+                <ul class="nav-menu">
+<!--                    <i class="far fa-house" style="color: #f7f7f7;"></i>
+                    <i class="far fa-pipe" style="color: #ededed;"></i>-->
+                    <li class="nav-menu-item">
+                        <i class="fas fa-percent" style="color: #f7f7f7;"></i>
+                        <a th:href="@{/promociones/promocion}" class="nav-menu-link nav-link">Promociones</a>
+                    </li>                   
+                    <li class="nav-menu-item">
+                        <i class="fas fa-suitcase" style="color: #ffffff;"></i>
+                        <a th:href="@{/paquete/paquetes}" class="nav-menu-link nav-link">Paquetes</a>
+                    </li>
 
-                            <li class="nav-menu-item">
-                                <i class="fas fa-plane" style="color: #ffffff;"></i>
-                                <a th:href="@{/vuelo/vuelos}" class="nav-menu-link nav-link">Vuelos</a>
+                    <li class="nav-menu-item">
+                        <i class="fas fa-plane" style="color: #ffffff;"></i>
+                        <a th:href="@{/vuelo/vuelos}" class="nav-menu-link nav-link">Vuelos</a>
 
-                            </li>
-                            <li class="nav-menu-item">
-                                <i class="fas fa-location-dot" style="color: #ffffff;"></i>
-                                <a href="@{/turistico/turisticos}" class="nav-menu-link nav-link">Lugares Turísticos</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <i class="fas fa-car" style="color: #eff0f0;"></i>
-                                <a href="@{/alquiler/alquileres}" class="nav-menu-link nav-link">Alquiler</a>
-                            </li>
+                    </li>
+                    <li class="nav-menu-item">
+                        <i class="fas fa-location-dot" style="color: #ffffff;"></i>
+                        <a th:href="@{/turistico/turisticos}" class="nav-menu-link nav-link">Lugares Turísticos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <i class="fas fa-car" style="color: #eff0f0;"></i>
+                        <a th:href="@{/alquiler/alquileres}" class="nav-menu-link nav-link">Alquiler</a>
+                    </li>
 
-                            <!--<i class="fas fa-phone" style="color: #f5ffff;"></i>-->
-                            <li class="nav-menu-item">
-                                <details>
 
-                                    <summary class="" >Contactanos</summary>
-<!--                                    <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-
-                                    <section>4000-1112</section>-->
-                                </details>
-                            </li>
-                        </ul>
-                    </nav>
-                    </header>
-                    </body>
-
-                    <footer th:fragment="footer" class="footer">
-                        <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
-                    </footer>
-                    </html>
+                    <li class="nav-menu-item">
+                        <i class="fas fa-phone" style="color: #f5ffff;"></i>
+                        <div class="nav-menu-link nav-link relative">
+                            <!--aqui pega el icono-->
+                            <i class="fas fa-car" style="color: #eff0f0;"></i>
+                            Alquiler
+                            <div class="absolute bottom-0">
+                                <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
+                                <span>4000-1112</span>
+                            </div>
+                        </div>
+                        
+<!--                        <details>
+                            <summary class="" >Contactanos</summary>
+                            <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
+                            <section>4000-1112</section>
+                        </details>-->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    <footer th:fragment="footer" class="footer">
+        <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
+    </footer>
+</html>

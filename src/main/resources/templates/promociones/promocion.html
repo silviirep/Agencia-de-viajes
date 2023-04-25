@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
-     <head>
+    <head>
         <title>Travel</title>
         <meta charset="UTF-8">
         <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
         <link href="css/default.css" rel="stylesheet" type="text/css"/>
     </head>
-     <body>
-        <header th: replace="layout/menu :: header"/>
+    <body>
+        <header th:replace="layout/menu :: header"/>
         <div class="contenido">
-            <a th:href="@{/promociones/promocion.html}"
+            <a th:href="@{/promociones/promocion}">joko</a>
             <section class="promociones">
-                    <h2>
-                        PROMOCIONES
-                    </h2>
-                    <div>
-                        <a href="/">
-                            <img src="imagenes/puertovallarta.jpg" alt="Puerto Vallarta"/>
-                            <span>Puerto Vallarta</br>Todo Incluido</span>
-                        </a>
-                        <a href="#">
-                            <img src="imagenes/islasmalvinas.jpg" alt="Islas Malvinas"/>
-                            <span>Islas Malvinas</br>2X1 Todo Incluido</span>
-                        </a>
-                        <a href="#">
-                            <img src="imagenes/israel.jpg" alt="Israel"/>
-                            <span>Israel</br>Todo Incluido</span>
-                        </a>
-                        <a href="#">
-                            <img src="imagenes/playasamara.jpg" alt="Playa Samara"/>
-                            <span>Playa Samara</br>Todo Incluido</span>
-                        </a>
-                        <a href="#">
-                            <img src="imagenes/fortunaSancarlos.jpg" alt="Fortuna de San Carlos"/>
-                            <span>Fortuna de San Carlos</br>Todo Incluido</span>
-                        </a>
-                    </div>
-                </section>
+                <h2>
+                    PROMOCIONES
+                </h2>
+                <div>
+                    <a href="@{/promociones/promocionesDetalle}">
+                        <img src="imagenes/puertovallarta.jpg" alt="Puerto Vallarta"/>
+                        <span>Puerto Vallarta</br>Todo Incluido</span>
+                    </a>
+                    <a href="@{/promociones/promocionesDetalle}">
+                        <img src="imagenes/islasmalvinas.jpg" alt="Islas Malvinas"/>
+                        <span>Islas Malvinas</br>2X1 Todo Incluido</span>
+                    </a>
+                    <a href="@{/promociones/promocionesDetalle}">
+                        <img src="imagenes/israel.jpg" alt="Israel"/>
+                        <span>Israel</br>Todo Incluido</span>
+                    </a>
+                   <a href="@{/promociones/promocionesDetalle}">
+                        <img src="imagenes/playasamara.jpg" alt="Playa Samara"/>
+                        <span>Playa Samara</br>Todo Incluido</span>
+                    </a>
+                    <a href="@{/promociones/promocionesDetalle}">
+                        <img src="imagenes/fortunaSancarlos.jpg" alt="Fortuna de San Carlos"/>
+                        <span>Fortuna de San Carlos</br>Todo Incluido</span>
+                    </a>
+                </div>
+            </section>
+        </div>
         <footer th:replace="layout/Menu :: footer" />
     </body>
 </html>
