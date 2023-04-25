@@ -12,7 +12,7 @@
     </head>
     <body>
         <header th:fragment="header" class="header">
-
+            <a class="inicioSesion" th:href="@{/login/inicioSesion}">Inicio Sesión</a>
             <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
 
             <nav class="nav">
@@ -50,17 +50,20 @@
                             <i class="fas fa-car" style="color: #eff0f0;"></i>
                             Alquiler
                             <div class="absolute bottom-0">
-                                <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
-                                <span>4000-1112</span>
+<!--                                <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
+                                <span>4000-1112</span>-->
                             </div>
+                             <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link">Contactanos</a>
                         </div>
-                        
+                       
+                       
 <!--                        <details>
                             <summary class="" >Contactanos</summary>
                             <img class="" src="imagenes/whatsapp .png" alt="" width="150" height="45"/>
                             <section>4000-1112</section>
                         </details>-->
-                    </li>
+                    
                 </ul>
             </nav>
         </header>

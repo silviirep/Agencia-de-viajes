@@ -2,10 +2,12 @@
     <html xmlns:th="http://www.thymeleaf.org">
         <title>Iniciar Sesión</title>
         <meta charset="UTF-8">
-        <link href="/static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div><img src="static/imagenes/log.png" alt="log" class="log"/></div>
+        <header th:replace="layout/Menu :: header"/>
+        <div><img src="../..static/imagenes/log.png" alt="log" class="log"/></div>
+
         <div class="login">
             <h4>Bienvenido!</h4>
             <label>Inicie Sesión para continuar</label>
@@ -19,7 +21,7 @@
             </br>
             </br>
             <label>
-            <input type="checkbox" checked="checked" name="remember"> Recordarme
+                <input type="checkbox" checked="checked" name="remember"> Recordarme
             </label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="recuperarContraseña.html" >Olvidó su Contraseña?</a>
@@ -28,7 +30,7 @@
             <button type="submit">Inciar Sesión</button>
 
         </div>
-
+        <footer th:replace="layout/Menu :: footer"/>
     </body>
 </html>
 

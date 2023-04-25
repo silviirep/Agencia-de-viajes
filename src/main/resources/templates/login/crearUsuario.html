@@ -2,10 +2,11 @@
     <head>
         <title>Crear Usuario</title>
         <meta charset="UTF-8">
-        <link href="/static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div><img src="static/imagenes/log.png" alt="log"/></div>
+        <header th:replace="layout/Menu :: header"/>
+        <div><img src="../../static/imagenes/log.png" alt="log"/></div>
         <div class="login">
             <h4>Registro Nuevo Usuario</h4>
             <label>Ingrese los siguientes datos</label>
@@ -53,7 +54,7 @@
             <input type="password" name="pass" required>
             </br> </br>
             <button type="submit">Registrarse</button>
-
+            <footer th:replace="layout/Menu :: footer"/>
         </div>
     </body>
 </html>

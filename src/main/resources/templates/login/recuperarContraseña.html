@@ -3,10 +3,11 @@
     <head>
         <title>Recuperar</title>
         <meta charset="UTF-8">
-        <link href="/static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div><img src="static/imagenes/log.png" alt="log"/></div>
+        <header th:replace="layout/Menu :: header"/>
+        <div><img src="../../static/imagenes/log.png" alt="log"/></div>
         <label>Ingrese lo Siguiente</label>
         </br>
        
@@ -16,7 +17,9 @@
         </br>
         <input type="email" name="usr" required>
         </br>
-        <button type="submit">Registrarse</button>
+        <button type="submit">Enviar</button>
+         <footer th:replace="layout/Menu :: footer"/>
+         
     </body>
 
 </html>

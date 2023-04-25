@@ -65,7 +65,7 @@ public class TemplateResolverConfiguration {
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
-        templateResolver.setOrder(3);
+        templateResolver.setOrder(4);
         templateResolver.setCheckExistence(true);
         return templateResolver;
     }
@@ -77,7 +77,7 @@ public class TemplateResolverConfiguration {
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
-        templateResolver.setOrder(3);
+        templateResolver.setOrder(5);
         templateResolver.setCheckExistence(true);
         return templateResolver;
     }
@@ -89,7 +89,7 @@ public class TemplateResolverConfiguration {
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
-        templateResolver.setOrder(3);
+        templateResolver.setOrder(6);
         templateResolver.setCheckExistence(true);
         return templateResolver;
     }
@@ -101,7 +101,7 @@ public class TemplateResolverConfiguration {
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
-        templateResolver.setOrder(3);
+        templateResolver.setOrder(7);
         templateResolver.setCheckExistence(true);
         return templateResolver;
     }
