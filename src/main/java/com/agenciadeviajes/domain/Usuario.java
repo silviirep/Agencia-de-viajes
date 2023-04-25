@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "login")
+@Table(name = "usuario")
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -29,16 +29,16 @@ public class Usuario implements Serializable {
     String contrasena;
     Boolean privilegios;
     
-
-    @JoinColumn(name = "id_reserva", referencedColumnName = "id_reserva")
-    @ManyToOne
-    
-    private Reserva reserva;
+//
+//    @JoinColumn(name = "id_reserva", referencedColumnName = "id_reserva")
+//    @ManyToOne
+//    
+//    private Reserva reserva;
 
     public Usuario() {
     }
 
-    public Usuario(Long idUsuario, String nombre, String apellidos, String nombreUsuario, String correo, String telefono, String fechaNacimiento, String contrasena, Boolean privilegios, Reserva reserva) {
+    public Usuario(Long idUsuario, String nombre, String apellidos, String nombreUsuario, String correo, String telefono, String fechaNacimiento, String contrasena, Boolean privilegios) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -48,7 +48,7 @@ public class Usuario implements Serializable {
         this.fechaNacimiento = fechaNacimiento;
         this.contrasena = contrasena;
         this.privilegios = privilegios;
-        this.reserva = reserva;
+       
     }
  
 }

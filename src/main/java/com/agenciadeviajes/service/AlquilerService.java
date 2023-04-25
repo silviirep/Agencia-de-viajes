@@ -12,7 +12,7 @@ import java.util.List;
  * @author Fernando
  */
 public interface AlquilerService {
-     public List<Alquiler> getAlquilers(); 
+     public List<Alquiler> getAlquileres(); 
     
     public Alquiler getAlquiler(Alquiler alquiler);
     

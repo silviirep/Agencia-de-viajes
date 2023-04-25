@@ -20,7 +20,7 @@ public class AlquilerServiceImpl implements AlquilerService{
     AlquilerDao alquilerDao;
 
     @Override
-    public List<Alquiler> getAlquilers() {
+    public List<Alquiler> getAlquileres() {
         return (List<Alquiler>) alquilerDao.findAll();
     }
 

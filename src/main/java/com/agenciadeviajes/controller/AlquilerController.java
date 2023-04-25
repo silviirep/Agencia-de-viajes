@@ -25,7 +25,7 @@ public class AlquilerController {
 
     @GetMapping("/alquiler/alquileres")
     public String inicio(Model model) {
-        var alquileres = alquilerService.getAlquilers();
+        var alquileres = alquilerService.getAlquileres();
         model.addAttribute("alquileres", alquileres);
         return "/alquiler/alquileres";
     }

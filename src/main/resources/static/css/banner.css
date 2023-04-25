@@ -27,5 +27,5 @@ form{
 }
 
 form input, form label{
-    display: block;
+    /*display: block;*/
 }
