@@ -1,3 +1,18 @@
+*{
+    padding: 2px;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: "Segoe UI Emoji"
+}
+
+  body{
+    background: rgb(83,124,191);
+    background: linear-gradient(90deg, rgba(83,124,191,1) 0%, rgba(59,191,73,1) 100%);
+
+}
+
+
+
 /* Tipo texto y password ...  */
 input[type=text], input[type=password], input[type=email] {
   width: 40%;
