@@ -15,7 +15,9 @@
 
         <header th:fragment="header" class="header">
             <a class="inicioSesion" th:href="@{/login/inicioSesion}">Inicio Sesión</a>
-            <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
+            <a href="/">
+                <img class="logoPagina" src="imagenes/logoPagina.png" alt=""/> 
+            </a>
 
             <nav class="nav">
                 <ul class="nav-menu">
@@ -43,18 +45,14 @@
                         <i class="fas fa-car" style="color: #eff0f0;"></i>
                         <a th:href="@{/alquiler/alquileres}" class="nav-menu-link nav-link">Alquiler</a>
                     </li>
-                    <nav>
-                        <ul>
-                            <li class="dropdown">
-                                <a href="#">Contactanos</a>
-                                <div class="dropdown-content">
-                                    <a href="#">Tel. 40010-1010</a>
-                                    <a href="#">travel@viajes.com</a>
-                                    <a href="#">Whatsapp: 8810-1011</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
+                    <li class="nav-menu-item dropdown">
+                        <a href="#">Contactanos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tel. 40010-1010</a>
+                            <a href="#">travel@viajes.com</a>
+                            <a href="#">Whatsapp: 8810-1011</a>
+                        </div>
+                    </li>
             </nav>
         </header>
     </body>
