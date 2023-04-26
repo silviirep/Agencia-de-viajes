@@ -6,6 +6,7 @@
         <link href="/css/default.css" rel="stylesheet" type="text/css"/>
         <link href="/css/estilospaquetes.css" rel="stylesheet" type="text/css"/>
         <link href="/css/banner.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/estilospromociones.css" rel="stylesheet" type="text/css"/>
     </head>
     <title>Travel</title>
 </head>
@@ -74,14 +75,14 @@
 
                 </div>
             </section>
-            <section class="paquetes">
+            <section class="promociones">
 
                 <h2>
-                    paquetes internacionales
+                    Vuelos
                 </h2>
                 <div>
-                    <a th:href="@{/paquete/paquetesDetalle/{titulo}(titulo=${link.titulo})}" 
-                       th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Internacionales'">
+                    <a th:href="@{/vuelo/vuelos}" 
+                       th:each="link : ${vuelos}" th:object="${link}">
                         <img th:src="@{${'/' + link.imagen}}" alt="">
                         <span th:text="${link.titulo}"></span>
                     </a>
@@ -97,17 +98,6 @@
                                                                 <span th:text='${link.titulo}'></span>
                                                             </a>
                                 </div>-->
-            </section>
-            <section class="paquetes">
-                <h2>
-                    paquetes nacionales
-                </h2>
-                <div>
-                    <a href="@{/paquete/paquetesDetalle/{titulo}(titulo=${link.titulo})}" th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Nacionales'">
-                        <img th:src="@{${'/' + link.imagen}}" alt="">
-                        <span th:text="${link.titulo}"></span>
-                    </a>
-                </div>
             </section>
         </main>
         <footer>

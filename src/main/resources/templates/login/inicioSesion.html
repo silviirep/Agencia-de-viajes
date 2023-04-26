@@ -5,40 +5,46 @@
         <head>
             <title>Iniciar Sesión</title>
             <meta charset="UTF-8">
-                <link href="../../static/css/menu.css" rel="stylesheet" type="text/css"/>
-                <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
+                <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+                <link href="/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
         </head>
         <body>
             <header th:replace="layout/Menu :: header"></header>
 
+            </br>
+            </br>
+            </br>
+            <div class="cuadroLogin">
+                <img class="log" src="/imagenes/log.png" alt=""/>
+                <div class="login">
+                    <h4>Bienvenido!</h4>
+                    </br>
+                    <label>Inicie Sesión para continuar</label>
+                    </br>
+                    <form action="/"  >
+                        <input type="text" placeholder="Nombre de Usuario" name="nombreUsuario" required>
+                            </br>
+                            </br>
+                            <label for="contraseña"><b></b></label>
+                            <input type="password" placeholder="Contraseña" name="pass" required>
+                                </br>
+                                </br>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Recordarme
+                                </label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="/login/crearUsuario">Registrarse</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="/login/recuperarContrasena" >Olvidó su Contraseña?</a>
 
-            <img class="log" src="../../static/imagenes/log.png" alt=""/>
-            <div class="login">
-                <h4>Bienvenido!</h4>
-                </br>
-                <label>Inicie Sesión para continuar</label>
-                </br>
-                <form action="/"  >
-                    <input type="text" placeholder="Nombre de Usuario" name="nombreUsuario" required>
-                        </br>
-                        </br>
-                        <label for="contraseña"><b></b></label>
-                        <input type="password" placeholder="Contraseña" name="pass" required>
-                            </br>
-                            </br>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Recordarme
-                            </label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="recuperarContraseña.html" >Olvidó su Contraseña?</a>
-                            </br>
-                            </br>
-                            <button type="submit">Inciar Sesión</button>
-                            </form>
-                            </div>
-                            <footer th:fragment="footer" class="footer">
-                                <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
-                            </footer>
-                            </body>
-                            </html>
-
+                                </br>
+                                </br>
+                                <button type="submit">Inciar Sesión</button>
+                                </form>
+                                </div>
+              <footer th:fragment="footer" class="footer">
+                <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
+             </footer>
+            </body>
+ </html>

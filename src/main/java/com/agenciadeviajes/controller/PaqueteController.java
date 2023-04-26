@@ -27,12 +27,21 @@ public class PaqueteController {
         return "/paquete/paquetes";
     }
     
-    @GetMapping("/paquete/detallesPaquete/{titulo}")
-    public String detalle(Model model) {
-        var paquetes = paqueteService.getPaquetes();
-        model.addAttribute("paquetes", paquetes);
-        return "/paquete/detallesPaquete";
-    }
+//    @GetMapping("/paquete/detallesPaquete")
+//    public String detalle(Model model) {
+//        paquetes = paqueteService.getPaquetes();
+//        model.addAttribute("paquetes", paquetes);
+//        return "/paquete/detallesPaquete";
+//    
+//    }
+        
+//        @GetMapping("/paquete/detallesPaquete/{titulo}")
+//    public String detalle(Paquete paquete, Model model){
+//        paquetes= paqueteService.getPaquetes(paquete);
+//        model.addAttribute("paquetes", paquetes);
+//        return "/paquete/detallesPaquete";
+//    
+//    }
 
     @GetMapping("/paquetes/nuevoPaquete")
     public String nuevoPaquete(Paquete paquete) {

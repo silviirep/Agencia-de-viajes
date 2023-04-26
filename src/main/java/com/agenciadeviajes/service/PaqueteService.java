@@ -12,6 +12,8 @@ public interface PaqueteService {
     
     public Paquete getPaquete(Paquete paquete);
     
+//    public List<Paquete> getPaquete(boolean activos);
+    
     public void save(Paquete paquete); // Sirve para insertar y modificar un registro
     
     public void delete (Paquete paquete);

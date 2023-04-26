@@ -3,16 +3,18 @@
         <title>Crear Usuario</title>
         <meta charset="UTF-8">
         
-        <link href="../../static/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
+         <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+                <link href="/css/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header th:replace="layout/Menu :: header"/>
-        <div><img src="../../static/imagenes/log.png" alt="log"/></div>
+        <div><img src="/imagenes/log.png" alt="log"/></div>
         <div class="login">
             <h4>Registro Nuevo Usuario</h4>
             <label>Ingrese los siguientes datos</label>
             </br>
             </br>
+            <form action="/"  >
             <label for="nombre">Username</label>
             </br>
             <input type="text" name="nombre" required>
@@ -55,6 +57,7 @@
             <input type="password" name="pass" required>
             </br> </br>
             <button type="submit">Registrarse</button>
+             </form>
             <footer th:fragment="footer" class="footer">
         <p style="font-size: 20px;">&COPY; Copyright 2023 Travel. Travel Agency | Developed By Team 9 Universidad Fidélitas</p>        
     </footer>

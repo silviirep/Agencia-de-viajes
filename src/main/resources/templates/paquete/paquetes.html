@@ -80,7 +80,7 @@
                     paquetes internacionales
                 </h2>
                 <div>
-                    <a th:href="@{/paquete/paquetesDetalle/{titulo}(titulo=${link.titulo})}" 
+                    <a th:href="@{/paquete/paquetesDetalle}" 
                        th:each="link : ${paquetes}" th:object="${link}" th:if="${link.tipo} == 'Internacionales'">
                         <img th:src="@{${'/' + link.imagen}}" alt="">
                         <span th:text="${link.titulo}"></span>

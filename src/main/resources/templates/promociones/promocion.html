@@ -4,8 +4,10 @@
         <title>Travel</title>
         <meta charset="UTF-8">
         <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/estilospromociones.css" rel="stylesheet" type="text/css"/>
         <link href="/css/default.css" rel="stylesheet" type="text/css"/>
         <link href="/css/banner.css" rel="stylesheet" type="text/css"/>
+        
     </head>
     <body>
         <header th:replace="layout/menu :: header"/>
@@ -15,8 +17,8 @@
                     PROMOCIONES
                 </h2>
                 <div>
-                    <a th:href="@{/promociones/promocion/{titulo}(titulo=${link.titulo})}" 
-                       th:each="link : ${promocion}" th:object="${link}" th:if="${link.tipo} == 'temporada'">
+                    <a th:href="@{/promociones/promocion}" 
+                       th:each="link : ${promociones}" th:object="${link}" th:if="${link.tipo} == 'temporada'">
                         <img th:src="@{${'/' + link.imagen}}" alt="">
                         <span th:text="${link.titulo}"></span>
                     </a>
