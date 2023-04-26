@@ -14,6 +14,12 @@
   border-radius: 24px;
 }
 
+.imgArticulo1{
+  margin-right: 37px;
+  border-radius: 24px;
+   padding: 0px 200px;
+}
+
 .logoPagina {
     height: 97px;
     width: 17%;
@@ -77,7 +83,7 @@
     text-align: center;
     color:white;
     height: 20px;
-    position: fixed;
+   
     bottom: 0;
     left:0;
     width: 100%;
